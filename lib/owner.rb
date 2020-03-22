@@ -68,7 +68,13 @@ class Owner
   end
   
   def list_pets
-    Cat.all.collect 
+    pets = []
+    Dog.all.each do |dog| 
+     if dog.owner.name == self.name
+       pets << dog
+     end
+     
+     
     
     jake.list_pets
   end 

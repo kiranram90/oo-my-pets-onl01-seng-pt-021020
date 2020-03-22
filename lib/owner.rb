@@ -66,4 +66,8 @@ class Owner
     self.cats << cat
     cat.owner = self
   end
+  
+  def list_pets 
+    
+  end 
 end

@@ -79,6 +79,4 @@ class Owner
        pets << cat
      end
      pets
-  end 
-end
 end

@@ -62,8 +62,7 @@ class Owner
   
   def buy_cat(cat_name)
     cat = Cat.all.find { |cat| cat.name == cat_name }
-    puts "KIRANS #{cat.name}"
-    puts "INCOMING #{cat_name}"
+    
     self.cats << cat
     cat.owner = self
   end

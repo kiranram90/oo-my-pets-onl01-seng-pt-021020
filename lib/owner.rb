@@ -73,10 +73,13 @@ class Owner
      if dog.owner.name == self.name
        pets << dog
      end
+   end
      
      Cat.all.each do |cat| 
      if cat.owner.name == self.name
        pets << cat
      end
+   end
      pets
+   end
 end

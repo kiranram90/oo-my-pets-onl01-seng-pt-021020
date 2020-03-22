@@ -74,8 +74,10 @@ class Owner
        pets << dog
      end
      
-     
-    
-    jake.list_pets
+     Cat.all.each do |cat| 
+     if cat.owner.name == self.name
+       pets << cat
+     end
+     pets
   end 
 end
